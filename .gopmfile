@@ -1,0 +1,14 @@
+[target]
+path = gotests
+
+[deps]
+github.com/gin-gonic/gin = 
+github.com/go-sql-driver/mysql = 
+github.com/jinzhu/gorm = 
+github.com/spf13/viper = 
+github.com/go-xorm/xorm = 
+github.com/denisenkom/go-mssqldb = 
+
+[res]
+include = 
+
