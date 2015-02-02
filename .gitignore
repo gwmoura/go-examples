@@ -23,3 +23,5 @@ _testmain.go
 *.test
 config.yaml
 mysql.go
+*.sh
+.vendor
