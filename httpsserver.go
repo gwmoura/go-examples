@@ -1,4 +1,5 @@
-// HTTP SERVER
+// HTTPS SEVER
+
 package main
 
 import (
@@ -13,6 +14,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", handler)
-	err := http.ListenAndServe(":8080", nil)
+	log.Printf("About to listen on 10443. Go to https://127.0.0.1:10443/")
+	err := http.ListenAndServeTLS(":10443", "cert.pem", "key.pem", nil)
 	log.Fatal(err)
 }
