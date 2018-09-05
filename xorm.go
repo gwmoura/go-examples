@@ -2,14 +2,16 @@ package main
 
 import (
 	"fmt"
-	_ "github.com/denisenkom/go-mssqldb"
-	"github.com/go-xorm/xorm"
 	"os"
 	"time"
+
+	_ "github.com/denisenkom/go-mssqldb"
+	"github.com/go-xorm/xorm"
 )
 
 var engine *xorm.Engine
 
+// Venda Struct de venda
 type Venda struct {
 	Pedido        int64
 	Cliente       int64
